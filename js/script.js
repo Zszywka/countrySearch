@@ -21,7 +21,7 @@ $(function() {
     countriesList.empty();
 
     response.forEach(function(item) {
-      $('<li>').text('country: ' + item.name).appendTo(countriesList);
+      $('<li>').text('country: ' + item.name).appendTo(countriesList).css('color', 'red');
       $('<li>').text('capital: ' + item.capital).appendTo(countriesList);
       $('<li>').text('region: ' + item.region).appendTo(countriesList);
       $('<li>').text('subregion: ' + item.subregion).appendTo(countriesList);
